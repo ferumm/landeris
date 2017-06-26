@@ -143,7 +143,7 @@
             resetSliders: false,
             fadingEffect: false,
             normalScrollElements: null,
-            scrollOverflow: false,
+            scrollOverflow: true,
             scrollOverflowReset: false,
             scrollOverflowHandler: iscrollHandler,
             scrollOverflowOptions: null,
@@ -165,7 +165,7 @@
             paddingBottom: 0,
             fixedElements: null,
             responsive: 0, //backwards compabitility with responsiveWiddth
-            responsiveWidth: 520,
+            responsiveWidth: 0,
             responsiveHeight: 0,
             responsiveSlides: false,
             parallax: false,

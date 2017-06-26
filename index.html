@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<link rel="stylesheet" type="text/css" href="animate.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -136,39 +136,6 @@ switch(index){
 		});
 		});
 	</script>
-	<script type="text/javascript">
-		var ctx = $("#myChart");
-var options = {};
-
-Chart.defaults.global.animation.duration = 3000;
-
-var data = {
-    labels: [
-        "Red",
-        "Green",
-        "Yellow"
-    ],
-    datasets: [
-        {
-            data: [300, 50, 100],
-            backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ]
-        }]
-};
-
-var myDoughnutChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: data,
-    options: options
-});
-
-
-console.log(Chart.defaults.global)
-	</script>
-
 </head>
 <body>
 

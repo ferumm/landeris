@@ -379,15 +379,15 @@ p{
 	.desc1 p{
 		width: 70%;
 	}
-	.career-il1{
-		float: left;
-		width: 100%;
-		display: block;
-	}
 }
 @media (max-width: 540px){
 	.desc p{
 		width: 92%;
+	}
+	.career-il1{
+		float: left;
+		width: 100%;
+		display: block;
 	}
 }
 @media (max-width: 390px){

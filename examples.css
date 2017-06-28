@@ -98,13 +98,19 @@ h1{
 	font-size: 2em;
 }
 p{
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	margin-bottom: 10px;
+	font-weight: 300;
+	letter-spacing: 1.2px;
 }
 .intro p{
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	margin-bottom: 10px;
 	margin-right: 20%;
+	font-weight: 300;
+	letter-spacing: 1.2px;
 }
 .intros p {
     font-size: 1em;
@@ -293,18 +299,22 @@ p{
 	padding-bottom: 10px;
 }
 .career-il1{
-	width:20%;
-	display:table-cell;
-	padding-right: 10px;
-    padding-left: 10px;
-    font-size: 0.7em;
-    text-align: center;
+	width:100%;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    text-align: left;
+    padding-right: 10px;
+}
+.career-il1 :before {
+  content: '•';
+  color:#fefefe;
+    left: -1em;
 }
 .career-il img{
-	width: 100%;
+	width: 80%;
 	padding-bottom: 5px;
 	text-align: center;
-	fill: white;
 }
 .box {
     width: 150px;
@@ -670,9 +680,11 @@ p{
 
 
 .glitch {
-  color: white;
-  font-size: 2em;
-  position: relative;
+	font-family: 'Roboto', sans-serif;
+  	color: white;
+  	font-size: 2em;
+ 	position: relative;
+ 	letter-spacing: 1.2px;
 }
 
 @keyframes noise-anim {
@@ -1158,4 +1170,144 @@ p{
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+/*career*/
+
+@keyframes perks-anim-1 {
+  0% {
+    clip: rect(85px, 150px, 90px, 0);
+  }
+  6.66667% {
+    clip: rect(47px, 150px, 88px, 0);
+  }
+  13.33333% {
+    clip: rect(62px, 150px, 142px, 0);
+  }
+  20% {
+    clip: rect(36px, 150px, 69px, 0);
+  }
+  26.66667% {
+    clip: rect(117px, 150px, 105px, 0);
+  }
+  33.33333% {
+    clip: rect(31px, 150px, 113px, 0);
+  }
+  40% {
+    clip: rect(55px, 150px, 35px, 0);
+  }
+  46.66667% {
+    clip: rect(58px, 150px, 136px, 0);
+  }
+  53.33333% {
+    clip: rect(80px, 150px, 149px, 0);
+  }
+  60% {
+    clip: rect(15px, 150px, 138px, 0);
+  }
+  66.66667% {
+    clip: rect(89px, 150px, 97px, 0);
+  }
+  73.33333% {
+    clip: rect(57px, 150px, 137px, 0);
+  }
+  80% {
+    clip: rect(64px, 150px, 74px, 0);
+  }
+  86.66667% {
+    clip: rect(3px, 150px, 72px, 0);
+  }
+  93.33333% {
+    clip: rect(59px, 150px, 7px, 0);
+  }
+  100% {
+    clip: rect(9px, 150px, 147px, 0);
+  }
+}
+@keyframes perks-anim-2 {
+  0% {
+    clip: rect(101px, 150px, 129px, 0);
+  }
+  6.66667% {
+    clip: rect(81px, 150px, 81px, 0);
+  }
+  13.33333% {
+    clip: rect(9px, 150px, 51px, 0);
+  }
+  20% {
+    clip: rect(56px, 150px, 119px, 0);
+  }
+  26.66667% {
+    clip: rect(92px, 150px, 25px, 0);
+  }
+  33.33333% {
+    clip: rect(110px, 150px, 112px, 0);
+  }
+  40% {
+    clip: rect(135px, 150px, 30px, 0);
+  }
+  46.66667% {
+    clip: rect(77px, 150px, 6px, 0);
+  }
+  53.33333% {
+    clip: rect(149px, 150px, 2px, 0);
+  }
+  60% {
+    clip: rect(29px, 150px, 67px, 0);
+  }
+  66.66667% {
+    clip: rect(7px, 150px, 80px, 0);
+  }
+  73.33333% {
+    clip: rect(19px, 150px, 32px, 0);
+  }
+  80% {
+    clip: rect(62px, 150px, 46px, 0);
+  }
+  86.66667% {
+    clip: rect(15px, 150px, 60px, 0);
+  }
+  93.33333% {
+    clip: rect(5px, 150px, 7px, 0);
+  }
+  100% {
+    clip: rect(116px, 150px, 77px, 0);
+  }
+}
+.perks > img {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  height: 150px;
+}
+.perks > img:nth-child(2),
+.perks > img:nth-child(3) {
+  clip: rect(0, 0, 0, 0);
+}
+.perks > img:nth-child(2) {
+  left: 5px;
+  animation: perks-anim-1 2s infinite linear alternate-reverse;
+}
+.perks > img:nth-child(3) {
+  left: 1px;
+  animation: perks-anim-2 3s infinite linear alternate-reverse;
+}
+.container{
+	margin: 0 auto;
+	width: 50%;
+	text-align: justify;
+}
+.container1{
+	margin: 0 auto;
+	width: 50%;
+
+}
+@media (max-width: 1250px){
+	.container{
+		width: 80%
+	}
+	.container1{
+	width: 90%;
+	}
 }

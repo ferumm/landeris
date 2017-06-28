@@ -59,8 +59,8 @@
 		</script>
 	<![endif]-->
 	<script type="text/javascript" src="scrolloverflow.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<!-- <script type="text/javascript" src="mgGlitch.min.js"></script> -->
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
@@ -91,14 +91,14 @@
 				$('#whatwedotitle').addClass('fadeInDown');
 			break;
 			case 4:
-				$('#career2').addClass('fadeIn');
-				$('#career3').addClass('fadeIn');
+				$('#career2').addClass('fadeInUp');
+				$('#career3').addClass('fadeInUp');
 				$('#careertitle').addClass('fadeInDown');
-				$('#career-il11').addClass('slideInRight');
-				$('#career-il12').addClass('slideInRight');
-				$('#career-il13').addClass('slideInRight');
-				$('#career-il14').addClass('slideInRight');
-				$('#career-il15').addClass('slideInRight');
+				$('#career-il11').addClass('fadeInUp');
+				$('#career-il12').addClass('fadeInUp');
+				$('#career-il13').addClass('fadeInUp');
+				$('#career-il14').addClass('fadeInUp');
+				$('#career-il15').addClass('fadeInUp');
 			break;
 			case 5:
 				$('#contact-button').addClass('fadeIn');
@@ -121,14 +121,14 @@ switch(index){
 				$('#whatwedotitle').removeClass('fadeInDown').css('opacity', 0);
 			break;
 			case 4:
-				$('#career2').removeClass('fadeIn').css('opacity', 0);
-				$('#career3').removeClass('fadeIn').css('opacity', 0);
+				$('#career2').removeClass('fadeInUp').css('opacity', 0);
+				$('#career3').removeClass('fadeInUp').css('opacity', 0);
 				$('#careertitle').removeClass('fadeInDown').css('opacity', 0);
-				$('#career-il11').removeClass('slideInRight').css('opacity', 0);
-				$('#career-il12').removeClass('slideInRight').css('opacity', 0);
-				$('#career-il13').removeClass('slideInRight').css('opacity', 0);
-				$('#career-il14').removeClass('slideInRight').css('opacity', 0);
-				$('#career-il15').removeClass('slideInRight').css('opacity', 0);
+				$('#career-il11').removeClass('fadeInUp').css('opacity', 0);
+				$('#career-il12').removeClass('fadeInUp').css('opacity', 0);
+				$('#career-il13').removeClass('fadeInUp').css('opacity', 0);
+				$('#career-il14').removeClass('fadeInUp').css('opacity', 0);
+				$('#career-il15').removeClass('fadeInUp').css('opacity', 0);
 			break;
 			case 5:
 				$('#contact-desc').removeClass('fadeInUp').css('opacity', 0);
@@ -160,7 +160,7 @@ switch(index){
 
 		<div class="section" id="aboutus1">
 				<!-- asdasd -->
-				<div class="container">
+				<div style="margin: 0 auto; width: 50%;">
 				<div class="animated" style="animation-delay: 0.1s; opacity: 0" id="abouttitle">
 					<div class="glitch" style="margin-bottom: 10px; text-align: left;" data-text="About Us">About Us</div> 
 				</div>
@@ -173,7 +173,7 @@ switch(index){
 
 	</div>
 	<div class="section" id="whatwedo1">
-		<div class="container">
+		<div style="margin: 0 auto; width: 50%;">
 				<div class="animated" style="opacity: 0;" id="whatwedotitle">
 				<div class="glitch2" style="font-size: 2em;margin-bottom: 10px; text-align: left;" data-text="What We Do">What We Do</div> 
 			</div>
@@ -184,7 +184,7 @@ switch(index){
 		</div>
 	</div>
 	<div class="section" id="career1">
-		<div class="container">
+		<div style="margin: 0 auto; width: 50%; text-align: justify;">
 			<div class="animated" style="opacity: 0" id="careertitle">
 				<div class="glitch3" style="font-size: 2em;margin-bottom: 10px; text-align: left;" data-text="Career">Career</div> 
 			</div>
@@ -192,26 +192,27 @@ switch(index){
 				<p>We’re always looking for creative, smart, and dedicated people to join us in building the digital media company of tomorrow. Joining the Inulti team comes with competitive perks, such as:</p>
 				</div>
 				<div class="career-il">
-					<div class="career-il1"><div id="career-il11" class="animated" style="animation-delay: 0.1s; opacity: 0;">
+					<div class="career-il1"><div id="career-il11" class="animated" style="animation-delay: 0.5s; opacity: 0;"><img width="150px" src="heart.svg"><br>
 					A city center office location, on one of the city’s main streets</div></div>
-					<div class="career-il1"><div id="career-il12" class="animated" style="animation-delay: 0.15s; opacity: 0;">
+					<div class="career-il1"><div id="career-il12" class="animated" style="animation-delay: 0.65s; opacity: 0;"><img width="150px" src="apple.svg"><br>
 					Unlimited snacks, including fruit, coffee, and other beverages</div></div>
-					<div class="career-il1"><div id="career-il13" class="animated" style="animation-delay: 0.2s; opacity: 0;">
+					<div class="career-il1"><div id="career-il13" class="animated" style="animation-delay: 0.8s; opacity: 0;"><img width="150px" src="clock.svg"><br>
 					Semi-flexible working hours</div></div>
-					<div class="career-il1"><div id="career-il14" class="animated" style="animation-delay: 0.25s; opacity: 0;">
+					<div class="career-il1"><div id="career-il14" class="animated" style="animation-delay: 0.95s; opacity: 0;"><img width="150px" src="vacy.svg"><br>
 					Flexible vacation days</div></div>
-					<div class="career-il1"><div id="career-il15" class="animated" style="animation-delay: 0.3s; opacity: 0;">
+					<div class="career-il1"><div id="career-il15" class="animated" style="animation-delay: 1.1s; opacity: 0;"><img swidth="150px" src="world.svg"><br>
 					Opportunities to work on international projects.</div></div>
 				</div>
-				<div class="animated" id="career3" style="opacity: 0;animation-delay: 0.7s;">
+				<div class="animated" id="career3" style="opacity: 0;animation-delay: 0.3s;">
 				<p>If you are interested in working with us, drop us a line and pitch us your dream job. We want to know how your talents would make you the perfect fit for our team!</p>
-			</div>
+				</div>
+				</div>
 		</div>
 	</div>
 	<div class="section" id="contactus1">
-		<div class="container1">
+		<div style="margin: 0 auto; width: 80%;">
 		<div class="animated" id="contact-desc" style="opacity: 0; animation-duration: 0.75s;">
-		<p">We’d love to share more about how we help your brand with our innovative strategies. Connect with us or drop us a line!</p>
+		<p style="font-size: 1.2em">We’d love to share more about how we help your brand with our innovative strategies. Connect with us or drop us a line!</p>
 		</div>
 			<div class="animated"  id="contact-button" style="opacity: 0; animation-duration: 2s ; animation-delay: 0.2s">
 				<div  class="box">
